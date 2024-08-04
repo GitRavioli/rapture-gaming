@@ -48,7 +48,7 @@ export default {
 </script>
 
 <template>
-  <div class="p-4">
+  <div class="p-10 mx-10">
     <h1 class="text-2xl font-bold mb-4">Contest Ideas</h1>
     <div class="mb-4">
       <input v-model="newContestIdea" type="text" name="newContestIdea" class="border p-2 rounded w-full"

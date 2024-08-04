@@ -25,6 +25,7 @@
         <RouterLink class="text-white hover:text-gray-200" to="/bracket">Tournament Bracket</RouterLink>
         <RouterLink class="text-white hover:text-gray-200" to="/report">Captain Report</RouterLink>
         <RouterLink class="text-white hover:text-gray-200" to="/report-output">Captain Report Output</RouterLink>
+        <RouterLink class="text-white hover:text-gray-200" to="/captain-notes">Captain Notes</RouterLink>
       </div>
     </div>
   </nav>

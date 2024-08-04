@@ -26,17 +26,21 @@
         </div>
 
         <div class="mb-4">
-            <h2 class="text-xl font-bold">__Name:__ KOZY</h2>
-            <label for="kozyOpportunities" class="block text-lg font-semibold mb-1">-Opportunities:</label>
-            <textarea v-model="report.kozyOpportunities" id="kozyOpportunities" class="border p-2 rounded w-full"
+            <label for="firstLT" class="text-xl font-bold">__Name:__</label>
+            <textarea v-model="report.firstLT" id="firstLTOpportunities" class="border p-2 rounded w-full"
+                rows="3"></textarea>
+            <label for="firstLTOpportunities" class="block text-lg font-semibold mb-1">-Opportunities:</label>
+            <textarea v-model="report.firstLTOpportunities" id="firstLTOpportunities" class="border p-2 rounded w-full"
                 rows="3"></textarea>
         </div>
 
         <div class="mb-4">
-            <h2 class="text-xl font-bold">__Name:__ TBD</h2>
-            <label for="tbdOpportunities" class="block text-lg font-semibold mb-1">-Opportunities:</label>
-            <textarea v-model="report.tbdOpportunities" id="tbdOpportunities" class="border p-2 rounded w-full"
+            <label for="secondLT" class="text-xl font-bold">__Name:__</label>
+            <textarea v-model="report.secondLT" id="secondLTOpportunities" class="border p-2 rounded w-full"
                 rows="3"></textarea>
+            <label for="secondLTOpportunities" class="block text-lg font-semibold mb-1">-Opportunities:</label>
+            <textarea v-model="report.secondLTOpportunities" id="secondLTOpportunities"
+                class="border p-2 rounded w-full" rows="3"></textarea>
         </div>
 
         <div class="mb-4">
@@ -90,9 +94,11 @@ export default {
                 date: '',
                 captainsName: 'Nitch',
                 platoonMembers: '',
+                firstLT: '',
+                secondLT: '',
                 ltsExpectations: '',
-                kozyOpportunities: '',
-                tbdOpportunities: '',
+                firstLTOpportunities: '',
+                secondLTOpportunities: '',
                 sergeantsExpectations: '',
                 promotionsDemotions: '',
                 inactiveMembers: '',

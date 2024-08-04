@@ -80,6 +80,9 @@
         <li>
           <RouterLink class="text-white hover:text-gray-200" to="/report-output">Captain Report Output</RouterLink>
         </li>
+        <li>
+          <RouterLink class="text-white hover:text-gray-200" to="/captain-notes">Captain Notes</RouterLink>
+        </li>
       </ul>
     </div>
   </footer>

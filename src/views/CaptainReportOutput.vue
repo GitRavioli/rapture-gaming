@@ -15,13 +15,13 @@
           **Are your LTs meeting expectations? Any improvement needed?**
           {{ report.ltsExpectations }}
   
-          **Name:** KOZY
+          **Name:** {{ report.firstLT }}
           -Opportunities:
-          {{ report.kozyOpportunities }}
+          {{ report.firstLTOpportunities }}
   
-          **Name:** TBD
+          **Name:** {{ report.secondLT }}
           -Opportunities:
-          {{ report.tbdOpportunities }}
+          {{ report.secondLTOpportunities }}
   
           **Are Sergeants meeting expectations? If the platoon has 0 Sergeants, anyone interested in joining leadership?**
           {{ report.sergeantsExpectations }}
@@ -40,9 +40,15 @@
         </code>
       </pre>
 
-        <button @click="copyToClipboard" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
-            Copy to Clipboard
-        </button>
+        <div class="space-x-3">
+            <button @click="copyToClipboard" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
+                Copy to Clipboard
+            </button>
+            <button @click="resetReport" class="bg-red-500 text-white px-4 py-2 rounded">
+                Reset Report (Doesn't currently do anything.)
+            </button>
+        </div>
+
     </div>
 </template>
 
@@ -67,13 +73,13 @@ export default {
   **Are your LTs meeting expectations? Any improvement needed?**
   ${this.report.ltsExpectations || ''}
   
-  **Name:** KOZY
+  **Name:** ${this.report.firstLT}
   -Opportunities:
-  ${this.report.kozyOpportunities || ''}
+  ${this.report.firstLTOpportunities || ''}
   
-  **Name:** TBD
+  **Name:** ${this.report.secondLT}
   -Opportunities:
-  ${this.report.tbdOpportunities || ''}
+  ${this.report.firstLTOpportunities || ''}
   
   **Are Sergeants meeting expectations? If the platoon has 0 Sergeants, anyone interested in joining leadership?**
   ${this.report.sergeantsExpectations || ''}
@@ -96,13 +102,20 @@ export default {
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
             });
+
         }
+    },
+    resetReport() {
+        localStorage.removeItem('phoenixCaptainReport');
+        this.report = {};
+        alert('Report has been reset!');
     },
     mounted() {
         const savedReport = localStorage.getItem('phoenixCaptainReport');
         if (savedReport) {
             this.report = JSON.parse(savedReport);
         }
+
     }
 };
 </script>
