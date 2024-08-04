@@ -21,8 +21,9 @@
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Contest Ideas</h3>
               </div>
               <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
-              <p class="mb-2 text-gray-600">A decentralized application (dapp) is an application built on a
-                decentralized network that combines a smart contract and a frontend user interface.</p>
+              <p class="mb-2 text-gray-600">Explore innovative and exciting contest ideas tailored for engaging your
+                community and sparking creativity. Discover detailed plans, rules, and inspiration for hosting memorable
+                contests.</p>
             </div>
           </div>
         </div>
@@ -34,8 +35,9 @@
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Responsive Tournament Bracket</h3>
               </div>
               <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">------------</p>
-              <p class="mb-2 text-gray-600">Web 3.0 is the third generation of Internet services that will
-                focus on understanding and analyzing data to provide a semantic web.</p>
+              <p class="mb-2 text-gray-600">Create and manage your tournaments with ease using our responsive bracket
+                system. Customize team names, track progress, and ensure seamless updates with local storage for an
+                engaging and interactive experience.</p>
             </div>
           </div>
         </div>
@@ -49,8 +51,9 @@
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Captain Report Template</h3>
               </div>
               <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
-              <p class="mb-2 text-gray-600">A Project Audit is a formal review of a project, which is intended
-                to assess the extent up to which project management standards are being upheld.</p>
+              <p class="mb-2 text-gray-600">Streamline your reporting with our customizable Captain Report Template.
+                Easily input and save key information, track progress, and generate formatted reports for seamless
+                communication and organization.</p>
             </div>
           </div>
         </div>
